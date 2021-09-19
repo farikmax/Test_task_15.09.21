@@ -1,0 +1,85 @@
+.feedback {
+	padding: 0 0 100px 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	&__title {
+		margin-bottom: 40px;
+	}
+	&__devider {
+		margin-bottom: 60px;
+	}
+	&__wrapper {
+		display: flex;
+		margin-bottom: 60px;
+		text-align: left;
+	}
+	&__card {
+		position: relative;
+		padding: 30px;
+		flex-basis: 33%;
+		margin-right: 1%;
+		min-height: 320px;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 5%;
+			right: 0;
+			bottom: 0;
+			left: 2%;
+			display: block;
+			width: 40px;
+			height: 40px;
+			background: url(../../icons/quotes.svg) center/cover no-repeat;
+			z-index: -2;
+		}
+	}
+
+	&__descr {
+		font-size: 22px;
+		font-style: italic;
+		margin-bottom: 50px;
+	}
+	&__user {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	&__btn {
+		align-items: center;
+	}
+}
+
+//media
+@media (max-width: 1199px) {
+	.feedback {
+		padding: 0 0 35px 0;
+		&__title {
+			margin-bottom: 26px;
+			font-size: 26px;
+		}
+		&__devider {
+			margin-bottom: 15px;
+		}
+		&__wrapper {
+			margin-bottom: 30px;
+			flex-wrap: wrap;
+		}
+		&__card {
+			min-width: 100%;
+			min-height: auto;
+			text-align: left;
+			flex-direction: column;
+		}
+
+		&__descr {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		&__pastime {
+			font-size: 14px;
+			font-style: italic;
+		}
+	}
+}

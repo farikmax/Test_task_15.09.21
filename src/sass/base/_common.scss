@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+}
+
+.devider {
+	display: block;
+	width: 80px;
+	height: 2px;
+	background-color: blue;
+	margin: 0 auto 0 auto;
+}
+
+.btn {
+	display: inline-block;
+	border: 1px solid red;
+	padding: 10px 25px;
+	color: white;
+	background-color: rgb(231, 63, 63);
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	transition: 0.2s all;
+	border-radius: 2px;
+	&:hover {
+		background-color: white;
+		color: red;
+	}
+}
+
+.title {
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
