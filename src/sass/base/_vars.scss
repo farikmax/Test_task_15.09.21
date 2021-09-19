@@ -1,5 +1,4 @@
 //fonts
-$main-font: "Poppins", sans-serif;
 
 //colors
 $white: #ffffff;
@@ -10,10 +9,10 @@ $main-color: $orange;
 //px_to_rem
 $base-size: 14px;
 @function px_to_rem($target, $context: $base-size) {
-  @if $target == 0 {
-    @return 0;
-  }
-  @return $target / $context + 0rem;
+	@if $target == 0 {
+		@return 0;
+	}
+	@return $target / $context + 0rem;
 }
 
 $s12: px_to_rem(12px);
@@ -23,6 +22,3 @@ $s20: px_to_rem(20px);
 $s24: px_to_rem(24px);
 $s36: px_to_rem(36px);
 $s48: px_to_rem(48px);
-
-//container-box
-$containerBox: 1440px;
